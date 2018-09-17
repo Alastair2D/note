@@ -8,7 +8,7 @@
 
     var list = new List() 
     list.add('new note')
-    assert.isTrue(list.all().includes('new note'))    // assert.include(list.all()) === "my first note"
+    assert.isTrue(list.notes.includes('new note'))    // assert.include(list.all()) === "my first note"
     }
 
     listTest1() 

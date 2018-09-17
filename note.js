@@ -10,3 +10,8 @@
   exports.Note = Note;
 
 })(this);
+
+// exports = { 
+//   Note: Note
+// }
+
