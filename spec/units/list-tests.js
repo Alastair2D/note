@@ -1,16 +1,29 @@
 (function (exports) {
 
-  function listTest1() {
-    //__PSEUDO STEPS__
-    // 1. Add a new note to the list
-    // 2. Assert that list contains new note
-    // 3. Expect truthy
+  function addNoteTest() {
 
-    var list = new List() 
+
+    var list = new List()
     list.add('new note')
     assert.isTrue(list.notes.includes('new note'))    // assert.include(list.all()) === "my first note"
     }
 
-    listTest1() 
-  }) (this);
 
+    function createAndStoreTest() {
+    var n1 = new Note("My first note");
+    var l1 = new List();
+    l1.createAndStore(n1);
+    assert.isTrue((l1.notes) === "My first note");
+    }
+
+
+
+
+
+    addNoteTest();
+    createAndStoreTest();
+
+
+
+
+  }) (this);
