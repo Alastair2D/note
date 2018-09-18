@@ -1,6 +1,5 @@
 (function (exports) {
 
-
   // Array.prototype.first = function() {
   //   return this[0];
   // }
@@ -19,8 +18,6 @@
     })
   }
 
-
-
   List.prototype.createAndStore = function(string) {
     var n1 = new Note(string);
     this.add(n1);
@@ -30,3 +27,16 @@
   exports.List = List
 
 })(this)
+
+  (function (exports) {
+    function Note(string) {
+      this.text = string;
+    };
+
+    Note.prototype.textReturn = function () {
+      return this.text;
+    };
+
+    exports.Note = Note;
+
+  })(this);
