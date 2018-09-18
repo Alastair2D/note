@@ -11,7 +11,3 @@
 
 })(this);
 
-// exports = { 
-//   Note: Note
-// }
-

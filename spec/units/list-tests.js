@@ -7,7 +7,6 @@
     assert.isTrue(list.notes.includes('new note'))    // assert.include(list.all()) === "my first note"
     }
 
-
     function createAndStoreTest() {
 
     var l1 = new List();
@@ -19,19 +18,9 @@
     // assert.isTrue((l1.notes.first()) === ("My first note"));
     assert.isTrue(l1.notes[0].textReturn() !== "My first note");
 
-
-
-
     }
-
-
-
-
 
     addNoteTest();
     createAndStoreTest();
-
-
-
 
   }) (this);
